@@ -1,16 +1,16 @@
 <template>
 	<view class="content":style="{'background-color':color}">
 		<Menu :menuList="menuList"></Menu>
-		<Basics :option="{color:color,width:'300',height:'300'}" class="basics"></Basics>
+		<drawer></drawer>
 	</view>
 </template>
 
 <script>
 	import Menu from "@/components/Menu.vue";
-	import Basics from "@/components/Soft-UI/Basics.vue";
+	import drawer from "@/components/Soft-UI/view/drawer.vue";
 	
 	export default {
-		components:{Menu,Basics},
+		components:{Menu,drawer},
 		data() {
 			return {
 				menuList:[
@@ -19,7 +19,7 @@
 						url:"/pages/components/keyNumber"
 					}
 				],
-				color:"#111"
+				color:"#ffffff"
 			}
 		},
 		onLoad() {

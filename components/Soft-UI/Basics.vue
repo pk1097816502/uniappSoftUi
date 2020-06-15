@@ -89,7 +89,7 @@
 				if(this.option&&this.option.blur){
 					return this.option.blur;
 				}
-				return parseInt(this.size/5);
+				return this.distance*2;
 			},
 			shape(){
 				if(this.option&&this.option.shape){
