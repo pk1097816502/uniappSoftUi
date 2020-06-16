@@ -42,6 +42,7 @@ $uni-border-color:#c8c7cc;
 $uni-font-size-sm:24rpx;
 $uni-font-size-base:28rpx;
 $uni-font-size-lg:32rpx;
+$uni-font-size-default:14px;
 
 /* 图片尺寸 */
 $uni-img-size-sm:40rpx;
@@ -78,3 +79,11 @@ $uni-font-size-paragraph:30rpx;
 /*浮动层级*/
 $uni-float-view:50;	//正常情况下置顶，如tabbar，titlebar
 $uni-float-top:99;	//绝对顶层
+
+/* 内容间距 */
+$uni-content-padding:12px;
+
+/*默认样式*/
+view{
+	font-size: $uni-font-size-default;
+}

@@ -1,6 +1,6 @@
 <template>
 	<view class="content":style="{'background-color':color}">
-		<Menu :menuList="menuList"></Menu>
+		<!-- <Menu :menuList="menuList"></Menu> -->
 		<drawer></drawer>
 	</view>
 </template>
@@ -33,6 +33,7 @@
 
 <style lang="scss" scoped>
 	.content{
+		padding: 15rpx;
 		display: flex;
 		flex-direction: column;
 		

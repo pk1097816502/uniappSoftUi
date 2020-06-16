@@ -61,7 +61,7 @@
 				return "";
 			},
 			size(){
-				return this.width>this.height?this.width:this.height
+				return this.width<this.height?this.width:this.height || 40;
 			},
 			//圆角度数
 			radius(){
@@ -137,7 +137,7 @@
 			rgbNumList(){
 				let cType = colorType(this.color);
 				if(cType == "error"){
-					return "";
+					return [255,255,255];
 				}else{
 					switch(cType){
 						case "color":

@@ -1,7 +1,9 @@
 <template>
-	<Basics>
-		<view class="drawer">
-			
+	<Basics class="drawer">
+		<view class="main">
+			<Basics class="title">
+				<text>视图容器</text>
+			</Basics>
 		</view>
 	</Basics>
 </template>
@@ -14,5 +16,12 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
+	.drawer{
+		.main{
+			.title{
+				padding: $uni-content-padding;
+			}
+		}
+	}
 </style>
