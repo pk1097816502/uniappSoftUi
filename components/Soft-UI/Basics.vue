@@ -91,6 +91,7 @@
 				}
 				return this.distance*2;
 			},
+			//控件状态
 			shape(){
 				if(this.option&&this.option.shape){
 					for(let type of this.shapeType){
@@ -104,13 +105,13 @@
 			boxShadow(){
 				console.log("阴影颜色",this.shadowBoxShadow,this.highlightBoxShadow);
 				
-				let boxShadowStr = `${this.distance}rpx ${this.distance}rpx ${this.blur}rpx ${this.shadowBoxShadow},
-					-${this.distance}rpx -${this.distance}rpx ${this.blur}rpx ${this.highlightBoxShadow}`;
+				let boxShadowLeftTopStr = `${this.distance}rpx ${this.distance}rpx ${this.blur}rpx ${this.shadowBoxShadow}`;
+				let boxShadowRightBottomStr = `-${this.distance}rpx -${this.distance}rpx ${this.blur}rpx ${this.highlightBoxShadow}`;
 				
 				if(this.shape=="disable"){
 					
 				}
-				return boxShadowStr;
+				return `${boxShadowLeftTopStr},${boxShadowRightBottomStr}`;
 			},
 			//计算高光
 			highlightBoxShadow(){

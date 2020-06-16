@@ -1,8 +1,9 @@
 <template>
 	<Basics class="drawer">
 		<view class="main">
-			<Basics class="title">
-				<text>视图容器</text>
+			<Basics :option="{shape:'button'}" class="title">
+				<text class="label">视图容器</text>
+				<text class="iconfont icon-icon-test"></text>
 			</Basics>
 		</view>
 	</Basics>
@@ -21,6 +22,12 @@
 		.main{
 			.title{
 				padding: $uni-content-padding;
+				display: flex;
+				align-items: center;
+				
+				.label{
+					flex: 1;
+				}
 			}
 		}
 	}
